@@ -53,7 +53,7 @@ Indicar si el funcionamiento es correcto, agregar métricas de rendimiento como 
 ![Metros](images/Metros.png)
 ![Metricas](images/Metricas.png)
 ![Pixeles](images/Pixeles.png)
-![Mapacalor](images/Mapadecalor.png)
+![Mapacalor](images/Heatmap.png)
 ## 5. Conclusiones
 
 Apartir de los resultados inferir nuevo conocimiento. Por ejemplo, al ultilizar concatenación de listas cono "+" el programa es menos eficiente en términos de tiempo que utilizar 'append()'.
