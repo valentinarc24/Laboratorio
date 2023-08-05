@@ -28,12 +28,6 @@ Python es un lenguaje de programación ampliamente utilizado en la ciencia de da
 NumPy es una librería fundamental en Python. Ofrece estructuras de datos eficientes para trabajar con arreglos multidimensionales y funciones matemáticas de alto rendimiento. Esto es esencial para el análisis de datos masivos, como los puntos de ubicación de peatones en este caso.
 Indicar que herramientas, estructuras o librerías se van a utilizar.
 
-Por ejemplo,
-
-Explicar como se usarán las herramientas:
-
-**Ipython**: Definir...
-
 **Visual Studio**: Definir
 
 ## 3. Materiales y métodos
