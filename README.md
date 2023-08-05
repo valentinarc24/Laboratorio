@@ -50,14 +50,8 @@ Con esta combinación de funciones, es posible realizar un análisis completo de
 
 Indicar si el funcionamiento es correcto, agregar métricas de rendimiento como tiempo de ejecución y cantidad de memoria utilizada.
 
-| Tipo de Experimento   | Tiempo de ejecucion (mseg) |  Memoria utilizada (Mb) |
-|-----------------------|----------------------------|-------------------------|
-| Programa Uno (p01.py) |                            |                         |
-| Programa Dos (p02.py) |                            |                         |
+![Met](images/Metros.png)
 
-
-
-<img src="images/column-chart.png" width="300">
 
 ## 5. Conclusiones
 
