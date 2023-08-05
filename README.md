@@ -50,10 +50,22 @@ Con esta combinación de funciones, es posible realizar un análisis completo de
 
 Indicar si el funcionamiento es correcto, agregar métricas de rendimiento como tiempo de ejecución y cantidad de memoria utilizada.
 
-![Metros](images/Metros.png)
-![Metricas](images/Metricas.png)
-![Pixeles](images/Pixeles.png)
-![Mapacalor](images/Heatmap.png)
+<div align="center">
+<img src="images/Metros.png" alt="Metros" width="519" height="387">
+</div>
+
+<div align="center">
+<img src="images/Metricas.png" alt="Metricas" width="519" height="387">
+</div>
+
+<div align="center">
+<img src="images/Pixeles.png" alt="Pixeles" width="519" height="387">
+</div>
+
+<div align="center">
+<img src="images/Heatmap.png" alt="Mapa" width="519" height="387">
+</div>
+
 ## 5. Conclusiones
 
 Apartir de los resultados inferir nuevo conocimiento. Por ejemplo, al ultilizar concatenación de listas cono "+" el programa es menos eficiente en términos de tiempo que utilizar 'append()'.
