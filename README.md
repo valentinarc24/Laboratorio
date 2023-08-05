@@ -23,6 +23,9 @@ Leer y cargar los datos referentes a peatones desde el archivo de texto en el pr
 
 ## 2. Marco teórico (800 caracteres)
 
+La construcción y análisis de una matriz de frecuencia implica la cuantificación de los patrones de movimiento de los peatones. El uso de NumPy y el lenguaje Python permiten la manipulación eficiente de estos datos en forma de matrices, facilitando los cálculos de frecuencia y análisis posteriores.
+Python es un lenguaje de programación ampliamente utilizado en la ciencia de datos debido a su facilidad de uso y su amplia gama de librerías especializadas. Su sintaxis clara y legible permite desarrollar programas eficientes.
+NumPy es una librería fundamental en Python. Ofrece estructuras de datos eficientes para trabajar con arreglos multidimensionales y funciones matemáticas de alto rendimiento. Esto es esencial para el análisis de datos masivos, como los puntos de ubicación de peatones en este caso.
 Indicar que herramientas, estructuras o librerías se van a utilizar.
 
 Por ejemplo,
