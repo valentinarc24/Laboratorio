@@ -13,7 +13,7 @@ Este trabajo es fundamental ya que aborda la falta de herramientas automatizadas
 
 **Objetivo General**
 
-Leer y cargar los datos referentes a peatones desde el archivo de texto en el programa.
+Desarrollar un programa en lenguaje Python que permita calcular la matriz de frecuencia basada en los datos de peatones proporcionados por un archivo de texto.
 
 **Objetivos específicos**
 
