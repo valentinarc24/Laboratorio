@@ -47,6 +47,7 @@ def mts_pixel(coordenadas,pos):###conversion de metros a pixeles en y###
 
 def get_resource_info(code_to_measure):
     resources_save_data = get_resource_usage(code_to_measure=code_to_measure)
+    print(f"Metricas de funcionamiento del código:")
     print(f"Tiempo de CPU: {resources_save_data['tiempo_cpu']} segundos")
     print(f"Uso de memoria virtual: {resources_save_data['memoria_virtual']} MB")
     print(f"Uso de memoria residente: {resources_save_data['memoria_residente']} MB")
@@ -113,5 +114,4 @@ coordenadas= [[float(coord) for coord in row.split()[-3:]]
               for row in f.readlines()[4:]] #Coordenadas x, y, z
 f.close
 
-get_resource_usage(lambda: main(coordenadas))
 get_resource_info(lambda: main(coordenadas))
