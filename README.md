@@ -82,9 +82,5 @@ El desarrollo de este trabajo  ha demostrado la relevancia de aplicar herramient
 
 La construcción de un mapa de calor resalta visualmente las zonas de mayor afluencia, permitiendo una interpretación intuitiva de la distribución de peatones en el túnel. Esta representación gráfica proporciona una visión clara de las áreas críticas que pueden requerir atención en términos de seguridad, diseño y planificación urbana.
 
-En la vida real, este programa podría influir en la optimización del diseño de túneles y pasillos, permitiendo a los planificadores urbanos mejorar la distribución de los espacios peatonales y garantizar una circulación más fluida y segura. Además, los datos obtenidos podrían ayudar a la implementación de medidas de seguridad y señalización en áreas de alto tránsito, reduciendo el riesgo de accidentes y garantizando un ambiente más seguro para los peatones.
-
- puede ser aplicado a diversas areas de estudio como la migración de animales dentro de su habitat, el flujo hidrico y de sustancias o minerales.
-
-
+En la vida real, este experimento podría influir en la optimización del diseño de túneles y pasillos, permitiendo a los planificadores urbanos mejorar la distribución de los espacios peatonales y garantizar una circulación más fluida y segura. Además, los datos obtenidos podrían ayudar a la implementación de medidas de seguridad y señalización en áreas de alto tránsito, reduciendo el riesgo de accidentes y garantizando un ambiente más seguro para los peatones. Por otra parte, el experimento descrito ofrece una herramienta poderosa y flexible para explorar y comprender fenómenos en diversas áreas, desde la ecología y biología hasta la ingeniería y la gestión ambiental. Al aprovechar la información que proporcionan las coordenadas y la representación gráfica mediante mapas de calor, se abre la puerta a un análisis más profundo y detallado de procesos naturales y sistemas artificiales, lo que contribuye a un mejor conocimiento y uso sostenible de nuestro entorno.
 
