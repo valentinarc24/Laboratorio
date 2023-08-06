@@ -55,14 +55,14 @@ Con esta combinación de funciones, es posible realizar un análisis completo de
 ## 4. Resultados obtenidos
 Después de seguir el procedimiento explicado anteriormente, se llevó a cabo un análisis para identificar las coordenadas "X" e "Y" que se repitieron con mayor frecuencia, así como las intersecciones más frecuentes entre estas coordenadas. El objetivo principal fue visualizar las áreas por donde se desplazaban los peatones en el túnel.
 
+<div align="center">
+<img src="images/Metros.png" alt="Metros" width="700" height="300">
+</div>
+
 Este análisis se realizó utilizando tanto los datos en metros como en píxeles. Es importante tener en cuenta que, al convertir los datos a píxeles, se realizaron aproximaciones, lo que resultó en un aumento de las frecuencias observadas.
 
 <div align="center">
-<img src="images/Metros.png" alt="Metros" width="519" height="387">
-</div>
-
-<div align="center">
-<img src="images/Pixeles.png" alt="Pixeles" width="519" height="387">
+<img src="images/Pixeles.png" alt="Pixeles" width="570" height="140">
 </div>
 
 Este enfoque de análisis permitió obtener una representación más clara y visual de los patrones de movimiento de los peatones en el túnel. Las áreas de mayor concentración de peatones y las rutas más transitadas quedaron resaltadas por colores más claros en el mapa de calor, lo que facilita la identificación de tendencias y comportamientos relevantes para el estudio del flujo de personas en el área analizada.
@@ -74,7 +74,7 @@ Este enfoque de análisis permitió obtener una representación más clara y vis
 Por último, se calcularon las métricas de rendimiento del sistema, para lo cual se mide el uso de recursos (CPU y Memoria) y como se puede observar son bastante reducidos, por lo cual el código se encuentra optimizado.
 
 <div align="center">
-<img src="images/Metricas.png" alt="Metricas" width="519" height="387">
+<img src="images/Metricas.png" alt="Metricas" width="500" height="180">
 </div>
 
 ## 5. Conclusiones
