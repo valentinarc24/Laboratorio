@@ -78,8 +78,11 @@ Por último, se calcularon las métricas de rendimiento del sistema, para lo cua
 </div>
 
 ## 5. Conclusiones
+El desarrollo de este trabajo  ha demostrado la relevancia de aplicar herramientas computacionales como Python, IPython, NumPy y Visual Studio Code en el análisis de patrones de movimiento de peatones en un túnel. La identificación de las coordenadas x e y que más se repiten en el archivo de datos proporciona información crucial para comprender los puntos de mayor concentración y tránsito peatonal.
 
-Apartir de los resultados inferir nuevo conocimiento. Por ejemplo, al ultilizar concatenación de listas cono "+" el programa es menos eficiente en términos de tiempo que utilizar 'append()'.
+La construcción de un mapa de calor resalta visualmente las zonas de mayor afluencia, permitiendo una interpretación intuitiva de la distribución de peatones en el túnel. Esta representación gráfica proporciona una visión clara de las áreas críticas que pueden requerir atención en términos de seguridad, diseño y planificación urbana.
+
+En la vida real, este programa podría influir en la optimización del diseño de túneles y pasillos, permitiendo a los planificadores urbanos mejorar la distribución de los espacios peatonales y garantizar una circulación más fluida y segura. Además, los datos obtenidos podrían ayudar a la implementación de medidas de seguridad y señalización en áreas de alto tránsito, reduciendo el riesgo de accidentes y garantizando un ambiente más seguro para los peatones.
 
 
 
