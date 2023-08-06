@@ -84,7 +84,7 @@ La construcción de un mapa de calor resalta visualmente las zonas de mayor aflu
 
 En la vida real, este programa podría influir en la optimización del diseño de túneles y pasillos, permitiendo a los planificadores urbanos mejorar la distribución de los espacios peatonales y garantizar una circulación más fluida y segura. Además, los datos obtenidos podrían ayudar a la implementación de medidas de seguridad y señalización en áreas de alto tránsito, reduciendo el riesgo de accidentes y garantizando un ambiente más seguro para los peatones.
 
-
+ puede ser aplicado a diversas areas de estudio como la migración de animales dentro de su habitat, el flujo hidrico y de sustancias o minerales.
 
 
 
