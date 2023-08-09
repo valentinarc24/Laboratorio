@@ -13,7 +13,7 @@ Este trabajo es fundamental ya que aborda la falta de herramientas automatizadas
 
 **Objetivo General**
 
-Desarrollar un programa en lenguaje Python que permita calcular la matriz de frecuencia basada en los datos de peatones proporcionados por un archivo de texto.
+Desarrollar un programa en lenguaje Python que permita visualizar le movimiento de peatones al pasar por un túnel, en base a los datos proporcionados por un archivo de texto.
 
 **Objetivos específicos**
 
@@ -34,6 +34,8 @@ El uso de NumPy y el lenguaje Python en Visual Studio permiten la manipulación 
 **Numpy**: Ofrece estructuras de datos eficientes para trabajar con arreglos multidimensionales y funciones matemáticas de alto rendimiento. Esto es esencial para el análisis de datos masivos.
 
 **Visual Studio**: Es un entorno de desarrollo integrado (IDE) muy popular y ampliamente utilizado para programación en diversos lenguajes, incluido Python. Proporciona características avanzadas de edición de código, depuración y control de versiones, lo que facilita el desarrollo y la colaboración en proyectos de programación científica.
+
+**Pandas**: Ofrece estructuras de datos y herramientas para el análisis de datos. Su estructura principal, el DataFrame, se emplea para cargar y organizar los datos de peatones. Esto permite la manipulación y transformación de los datos.
 
 ## 3. Materiales y métodos
 
