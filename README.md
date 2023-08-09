@@ -84,6 +84,22 @@ Por último, se calcularon las métricas de rendimiento del sistema, para lo cua
 <div align="center">
 <img src="images/Met1.png" alt="Metricas numpy" width="431" height="99">
 </div>
+
+<div align="center">
+<img src="images/Met2.png" alt="Metricas pandas" width="431" height="99">
+</div>
+
+<div align="center">
+<img src="images/Histrograma1.png" alt="Histrograma 1" width="431" height="99">
+</div>
+
+<div align="center">
+<img src="images/Histrograma2.png" alt="Histrograma 2" width="431" height="99">
+</div>
+
+<div align="center">
+<img src="images/Histrograma 3.png" alt="Histrograma 3" width="431" height="99">
+</div>
 ## 5. Conclusiones
 El desarrollo de este trabajo  ha demostrado la relevancia de aplicar herramientas computacionales como Python, IPython, NumPy y Visual Studio Code en el análisis de patrones de movimiento de peatones en un túnel. La identificación de las coordenadas x e y que más se repiten en el archivo de datos proporciona información crucial para comprender los puntos de mayor concentración y tránsito peatonal.
 
