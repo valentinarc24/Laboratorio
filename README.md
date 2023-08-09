@@ -90,15 +90,15 @@ Por último, se calcularon las métricas de rendimiento del sistema, para lo cua
 </div>
 
 <div align="center">
-<img src="images/Histograma1.png" alt="Histograma 1" width="431" height="99">
+<img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
 </div>
 
 <div align="center">
-<img src="images/Histograma2.png" alt="Histograma 2" width="431" height="99">
+<img src="images/Histograma_2.png" alt="Histograma 2" width="541" height="442">
 </div>
 
 <div align="center">
-<img src="images/Histograma3.png" alt="Histograma 3" width="431" height="99">
+<img src="images/Histograma_3.png" alt="Histograma 3" width="541" height="442">
 </div>
 ## 5. Conclusiones
 El desarrollo de este trabajo  ha demostrado la relevancia de aplicar herramientas computacionales como Python, IPython, NumPy y Visual Studio Code en el análisis de patrones de movimiento de peatones en un túnel. La identificación de las coordenadas x e y que más se repiten en el archivo de datos proporciona información crucial para comprender los puntos de mayor concentración y tránsito peatonal.
