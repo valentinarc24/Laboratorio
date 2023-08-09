@@ -1,5 +1,5 @@
 ![Logo UCN](images/60x60-ucn-negro.png)
-# Laboratorio 01: Cálculo de frecuencia peatonal 
+# Laboratorio 02: Visualizar mapas de calor (Histogramas 2D)
 
 
 ## 1. Introducción 
@@ -81,6 +81,9 @@ Por último, se calcularon las métricas de rendimiento del sistema, para lo cua
 <img src="images/Metricas.png" alt="Metricas" width="500" height="180">
 </div>
 
+<div align="center">
+<img src="images/Met1.png" alt="Metricas numpy" width="431" height="99">
+</div>
 ## 5. Conclusiones
 El desarrollo de este trabajo  ha demostrado la relevancia de aplicar herramientas computacionales como Python, IPython, NumPy y Visual Studio Code en el análisis de patrones de movimiento de peatones en un túnel. La identificación de las coordenadas x e y que más se repiten en el archivo de datos proporciona información crucial para comprender los puntos de mayor concentración y tránsito peatonal.
 
