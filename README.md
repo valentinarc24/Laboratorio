@@ -1,5 +1,5 @@
 ![Logo UCN](images/60x60-ucn-negro.png)
-# Laboratorio 02: Visualizar mapas de calor (Histogramas 2D)
+# Laboratorio 02: Visualización de mapas de calor
 
 
 ## 1. Introducción 
