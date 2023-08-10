@@ -96,6 +96,8 @@ En el segundo caso, relativo a una entrada con una extensión de cuatro metros y
 <img src="images/Histograma_2.png" alt="Histograma 2" width="541" height="442">
 </div>
 
+Finalmente, se plantea la situación en la cual se accede por una puerta de 5 metros, no obstante, la salida se encuentra limitada a 2 metros. Esta disposición revela una notable congestión en al final del tránsito en el túnel, ya que los peatones, inicialmente dispersos a lo largo del trayecto, se ven obligados a converger hacia el centro del túnel debido a la estrechez de la salida.
+
 <div align="center">
 <img src="images/Histograma_3.png" alt="Histograma 3" width="541" height="442">
 </div>
