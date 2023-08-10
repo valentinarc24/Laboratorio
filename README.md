@@ -4,7 +4,6 @@
 
 ## 1. Introducción 
 
-**Definición del problema**
 En el contexto actual de planificación urbana y seguridad peatonal, comprender los patrones de desplazamiento de peatones es esencial. La problemática a desarrollar en el presente trabajo consiste en calcular una matriz de frecuencia a partir de datos de puntos de peatones en un archivo de texto. El desarrollo de esta matriz mejora la identificación de zonas de riesgo y la toma de decisiones informadas. A través del uso Python como lenguaje de programación, se ofrece una solución para procesar grandes conjuntos de datos y calcular frecuencias, abordando esta problemática de manera eficiente.
 
 ### 1.1 Justificación
@@ -100,7 +99,9 @@ En el segundo caso, relativo a una entrada con una extensión de cuatro metros y
 <div align="center">
 <img src="images/Histograma_3.png" alt="Histograma 3" width="541" height="442">
 </div>
+
 ## 5. Conclusiones
+
 Este trabajo demuestra la importancia de utilizar herramientas computacionales como Python, NumPy, Visual Studio Code y la librería Pandas para analizar patrones de movimiento de peatones en un túnel. La identificación de coordenadas repetidas proporciona información clave sobre las zonas de mayor concentración y tráfico peatonal. La creación de mapas de calor resalta visualmente las áreas de mayor afluencia, lo que facilita la comprensión intuitiva de la distribución de peatones en el túnel.
 
 La inclusión de la librería Pandas permitió crear histogramas de diferentes tipos de datos de manera más eficiente y con un código más conciso. Reducir la longitud del código y aumentar la eficiencia computacional es beneficioso por varias razones. Un código más eficiente implica un menor consumo de recursos computacionales, como tiempo de procesamiento y memoria. Esto es especialmente importante cuando se manejan conjuntos de datos extensos o cálculos complejos, como en el análisis de patrones de movimiento. Además, generalmente se ejecuta más rápido, lo que es crucial en aplicaciones en tiempo real o cuando se trabaja con grandes volúmenes de datos.
