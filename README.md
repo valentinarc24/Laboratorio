@@ -75,11 +75,7 @@ Este enfoque de análisis permitió obtener una representación más clara y vis
 <img src="images/Heatmap.png" alt="Mapa" width="519" height="387">
 </div>
 
-Por último, se calcularon las métricas de rendimiento del sistema, para lo cual se mide el uso de recursos (CPU y Memoria) y como se puede observar son bastante reducidos, por lo cual el código se encuentra optimizado.
-
-<div align="center">
-<img src="images/Metricas.png" alt="Metricas" width="500" height="180">
-</div>
+Por último, se calcularon las métricas de rendimiento del sistema para ambos códigos, con lo cual se mide el uso de recursos (CPU y Memoria) y como se puede observar son bastante reducidos, por lo cual el código se encuentra optimizado, pero cabe mencionar que utilizando "Pandas" se tarda unas 0.0 segundos menos, por lo cual seria más rápido, además el código es bastante más reducido con la utilización de "Data Frame" en lugar de matrices, lo cual permite que el código sea más simple, legible y fácil de entender.
 
 <div align="center">
 <img src="images/Met1.png" alt="Metricas numpy" width="431" height="99">
@@ -88,6 +84,8 @@ Por último, se calcularon las métricas de rendimiento del sistema, para lo cua
 <div align="center">
 <img src="images/Met2.png" alt="Metricas pandas" width="431" height="99">
 </div>
+
+Utilizando el código de "Pandas" se analizan tres casos de movilidad de los peatones, el primer caso es el mismo mostrado anteriormente, en el cual el movimiento de los peatones es de derecha a izquierda con una persona parada en el centro de la puerta de un metro, provocando así que el recorrido sea más concentrado por lo laterales del pasillo y más vacio en el centro.
 
 <div align="center">
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
