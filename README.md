@@ -91,8 +91,7 @@ Empleando la biblioteca "Pandas", se procede al análisis de tres escenarios que
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
 </div>
 
-
-En el segundo caso, relativo a una entrada con una extensión de cuatro metros y una salida de cinco metros, es evidente la utilización integral del túnel por parte de los peatones. No se aprecia una preferencia marcada por un sendero con mayor repetición de tránsito. En su mayoría, los peatones transitan en línea prácticamente recta hasta alcanzar el extremo final. Aquellos se encuentran en los extremos laterales del túnel tienen que ir hacia el centro a medida que se acercan a la salida.
+En el segundo caso, relativo a una entrada con una extensión de cuatro metros y una salida de cinco metros, es evidente la utilización integral del túnel por parte de los peatones. No se aprecia una preferencia marcada por un sendero con mayor repetición de tránsito. En su mayoría, los peatones transitan en línea prácticamente recta hasta alcanzar el extremo final. Aquellos se encuentran en los extremos laterales del túnel tienen que ir hacia el centro a medida que se acercan a la salida, esto se puede evidenciar en la franja amarilla superior.
 
 <div align="center">
 <img src="images/Histograma_2.png" alt="Histograma 2" width="541" height="442">
