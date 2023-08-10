@@ -26,7 +26,7 @@ Desarrollar un programa en lenguaje Python que permita visualizar le movimiento 
 Para la realización del experimento se siguieron los pasos generales de la metodología ETL (Extracción, Transformación y Cargar).
 El uso de NumPy y el lenguaje Python en Visual Studio permiten la manipulación eficiente de los datos, facilitando los cálculos de frecuencia y análisis posteriores.
 
-**Python**: Es un lenguaje de programación ampliamente utilizado en la ciencia de datos debido a su facilidad de uso y su amplia gama de librerías especializadas. Su sintaxis clara y legible permite desarrollar programas eficientes.
+**Python**: Es un lenguaje de programación ampliamente utilizado en la ciencia de datos debido a su facilidad de uso y su amplia gama de bibliotecas especializadas. Su sintaxis clara y legible permite desarrollar programas eficientes.
 
 **iPython**: Es un entorno interactivo para la programación en Python, que permite ejecutar y depurar código. Proporciona una interfaz enriquecida para la programación, depuración y visualización de datos, lo que es especialmente útil para la experimentación y análisis iterativo.
 
@@ -74,7 +74,7 @@ Este enfoque del análisis permitió obtener una representación más clara y vi
 <img src="images/Heatmap.png" alt="Mapa" width="519" height="387">
 </div>
 
-Por último, se calcularon las métricas de rendimiento del sistema para ambos códigos, con lo cual se mide el uso de recursos (CPU y Memoria). Los resultados indican una notable eficiencia, evidenciando una cuidadosa optimización del código. No obstante, es relevante señalar que al emplear la librería "Pandas" se logra una mejora temporal de aproximadamente 0.05 segundos, agilizando la ejecución. Además, se destaca la notable concisión del código al emplear la estructura de "Data Frames" en lugar de matrices, lo cual no solo simplifica el código, sino que también incrementa su legibilidad y comprensión.
+Por último, se calcularon las métricas de rendimiento del sistema para ambos códigos, con lo cual se mide el uso de recursos (CPU y Memoria). Los resultados indican una notable eficiencia, evidenciando una cuidadosa optimización del código. No obstante, es relevante señalar que al emplear la biblioteca Pandas se logra una mejora temporal de aproximadamente 0.05 segundos, agilizando la ejecución. Además, se destaca la notable concisión del código al emplear la estructura de "Data Frames" en lugar de matrices, lo cual no solo simplifica el código, sino que también incrementa su legibilidad y comprensión.
 
 <div align="center">
 <img src="images/Met1.png" alt="Metricas numpy" width="431" height="99">
@@ -84,7 +84,7 @@ Por último, se calcularon las métricas de rendimiento del sistema para ambos c
 <img src="images/Met2.png" alt="Metricas pandas" width="431" height="99">
 </div>
 
-Empleando la biblioteca "Pandas", se procede al análisis de tres escenarios que abordan la movilidad peatonal. Estos casos consideran un desplazamiento unidireccional de derecha a izquierda, el primer caso es el mismo presentado anteriormente, con una persona parada en el centro de la puerta de ingreso, la cual tiene un ancho de un metro y una puerta de cinco metros para la salida, provocando así una concentración marcada de flujo a lo largo de las secciones laterales del túnel, mientras que el sector central ostenta un vacío relativo.
+Empleando la biblioteca Pandas, se procede al análisis de tres escenarios que abordan la movilidad peatonal. Estos casos consideran un desplazamiento unidireccional de derecha a izquierda, el primer caso es el mismo presentado anteriormente, con una persona parada en el centro de la puerta de ingreso, la cual tiene un ancho de un metro y una puerta de cinco metros para la salida, provocando así una concentración marcada de flujo a lo largo de las secciones laterales del túnel, mientras que el sector central ostenta un vacío relativo.
 
 <div align="center">
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
@@ -104,9 +104,9 @@ Finalmente, se plantea la situación en la cual se accede por una puerta de 5 me
 
 ## 5. Conclusiones
 
-Este trabajo demuestra la importancia de utilizar herramientas computacionales como Python, NumPy, Visual Studio Code y la librería Pandas para analizar patrones de movimiento de peatones en un túnel. La identificación de coordenadas repetidas proporciona información clave sobre las zonas de mayor concentración y tráfico peatonal. La creación de mapas de calor resalta visualmente las áreas de mayor afluencia, lo que facilita la comprensión intuitiva de la distribución de peatones en el túnel.
+Este trabajo demuestra la importancia de utilizar herramientas computacionales como Python, NumPy, Visual Studio Code y la biblioteca Pandas para analizar patrones de movimiento de peatones en un túnel. La identificación de coordenadas repetidas proporciona información clave sobre las zonas de mayor concentración y tráfico peatonal. La creación de mapas de calor resalta visualmente las áreas de mayor afluencia, lo que facilita la comprensión intuitiva de la distribución de peatones en el túnel.
 
-La inclusión de la librería Pandas permitió crear histogramas de diferentes tipos de datos de manera más eficiente y con un código más conciso. Reducir la longitud del código y aumentar la eficiencia computacional es beneficioso por varias razones. Un código más eficiente implica un menor consumo de recursos computacionales, como tiempo de procesamiento y memoria. Esto es especialmente importante cuando se manejan conjuntos de datos extensos o cálculos complejos, como en el análisis de patrones de movimiento. Además, generalmente se ejecuta más rápido, lo que es crucial en aplicaciones en tiempo real o cuando se trabaja con grandes volúmenes de datos.
+La inclusión de la biblioteca Pandas permitió crear histogramas de diferentes tipos de datos de manera más eficiente y con un código más conciso. Reducir la longitud del código y aumentar la eficiencia computacional es beneficioso por varias razones. Un código más eficiente implica un menor consumo de recursos computacionales, como tiempo de procesamiento y memoria. Esto es especialmente importante cuando se manejan conjuntos de datos extensos o cálculos complejos, como en el análisis de patrones de movimiento. Además, generalmente se ejecuta más rápido, lo que es crucial en aplicaciones en tiempo real o cuando se trabaja con grandes volúmenes de datos.
 
 Este enfoque tiene implicaciones prácticas en la optimización del diseño de túneles y pasillos, permitiendo una planificación urbana más eficiente y segura. Los datos recopilados también pueden influir en la implementación de medidas de seguridad y señalización en áreas de alto tránsito, lo que reduce los riesgos de accidentes y mejora la seguridad peatonal.
 
