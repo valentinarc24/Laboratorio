@@ -85,7 +85,7 @@ Por último, se calcularon las métricas de rendimiento del sistema para ambos c
 <img src="images/Met2.png" alt="Metricas pandas" width="431" height="99">
 </div>
 
-Utilizando el código de "Pandas" se analizan tres casos de movilidad de los peatones, el primer caso es el mismo mostrado anteriormente, en el cual el movimiento de los peatones es de derecha a izquierda con una persona parada en el centro de la puerta de un metro, provocando así que el recorrido sea más concentrado por lo laterales del pasillo y más vacio en el centro.
+Utilizando el código de "Pandas" se analizan tres casos de movilidad de los peatones, el primer caso es el mismo mostrado anteriormente, en el cual el movimiento de los peatones es de derecha a izquierda con una persona parada en el centro de la puerta de ingreso de un metro y con una puerta de cinco metros para la salida, provocando así que el recorrido sea más concentrado por lo laterales del pasillo y más vacio en el centro.
 
 <div align="center">
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
