@@ -69,13 +69,13 @@ Este análisis se realizó utilizando tanto los datos en metros como en píxeles
 <img src="images/Pixeles.png" alt="Pixeles" width="570" height="140">
 </div>
 
-Este enfoque de análisis permitió obtener una representación más clara y visual de los patrones de movimiento de los peatones en el túnel. Las áreas de mayor concentración de peatones y las rutas más transitadas quedaron resaltadas por colores más claros en el mapa de calor, lo que facilita la identificación de tendencias y comportamientos relevantes para el estudio del flujo de personas en el área analizada.
+Este enfoque del análisis permitió obtener una representación más clara y visual de los patrones de movimiento de los peatones en el túnel. Las áreas con mayor concentración de peatones y las rutas más transitadas quedaron resaltadas por colores más claros en el mapa de calor, lo que facilita la identificación de tendencias y comportamientos relevantes para el estudio del flujo de personas en el área analizada.
 
 <div align="center">
 <img src="images/Heatmap.png" alt="Mapa" width="519" height="387">
 </div>
 
-Por último, se calcularon las métricas de rendimiento del sistema para ambos códigos, con lo cual se mide el uso de recursos (CPU y Memoria) y como se puede observar son bastante reducidos, por lo cual el código se encuentra optimizado, pero cabe mencionar que utilizando "Pandas" se tarda unas 0.0 segundos menos, por lo cual seria más rápido, además el código es bastante más reducido con la utilización de "Data Frame" en lugar de matrices, lo cual permite que el código sea más simple, legible y fácil de entender.
+Por último, se calcularon las métricas de rendimiento del sistema para ambos códigos, con lo cual se mide el uso de recursos (CPU y Memoria). Los resultados indican una notable eficiencia, evidenciando una cuidadosa optimización del código. No obstante, es relevante señalar que al emplear la librería "Pandas" se logra una mejora temporal de aproximadamente 0.05 segundos, agilizando la ejecución. Además, se destaca la notable concisión del código al emplear la estructura de "Data Frames" en lugar de matrices, lo cual no solo simplifica el código, sino que también incrementa su legibilidad y comprensión.
 
 <div align="center">
 <img src="images/Met1.png" alt="Metricas numpy" width="431" height="99">
@@ -85,11 +85,14 @@ Por último, se calcularon las métricas de rendimiento del sistema para ambos c
 <img src="images/Met2.png" alt="Metricas pandas" width="431" height="99">
 </div>
 
-Utilizando el código de "Pandas" se analizan tres casos de movilidad de los peatones, el primer caso es el mismo mostrado anteriormente, en el cual el movimiento de los peatones es de derecha a izquierda con una persona parada en el centro de la puerta de ingreso de un metro y con una puerta de cinco metros para la salida, provocando así que el recorrido sea más concentrado por lo laterales del pasillo y más vacio en el centro.
+Empleando la biblioteca "Pandas", se procede al análisis de tres escenarios que abordan la movilidad peatonal. Estos casos consideran un desplazamiento unidireccional de derecha a izquierda, el primer caso es el mismo presentado anteriormente, con una persona parada en el centro de la puerta de ingreso, la cual tiene un ancho de un metro y una puerta de cinco metros para la salida, provocando así una concentración marcada de flujo a lo largo de las secciones laterales del túnel, mientras que el sector central ostenta un vacío relativo.
 
 <div align="center">
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
 </div>
+
+
+En el segundo caso, relativo a una entrada con una extensión de cuatro metros y una salida de cinco metros, es evidente la utilización integral del túnel por parte de los peatones. No se aprecia una preferencia marcada por un sendero con mayor repetición de tránsito. En su mayoría, los peatones transitan en línea prácticamente recta hasta alcanzar el extremo final. Aquellos se encuentran en los extremos laterales del túnel tienen que ir hacia el centro a medida que se acercan a la salida.
 
 <div align="center">
 <img src="images/Histograma_2.png" alt="Histograma 2" width="541" height="442">
