@@ -44,8 +44,9 @@ Se utilizó un archivo de texto que contiene 25536 líneas de datos, los cuales 
 1. Extracción: En primer lugar se lee el archivo del cual se extraen las coordenadas de los peatones, las cuales se entregan en la función main para realizar los distintos analisis requeridos.
 
 2. Transformar:
-   2.1. Análisis de frecuencia de ejes X e Y: La función frecuencia_dict permite identificar qué valores en los ejes X e Y son los más frecuentes, lo que podría indicar direcciones o patrones de movimiento preferidos por los peatones.
-   2.2. Análisis de frecuencia de coordenadas: La función frecuencia_xy puede ayudar a determinar qué coordenadas (x, y) se repiten con mayor frecuencia, lo que podría revelar áreas de mayor concentración de peatones.
+   2.1. Se crea el Data frame con los datos del archivo, creado así una tabla donde cada fila representa un peatón en un frame (imagen) especifico.
+   2.2. Se crea
+   2.2. Se calcula la velocidad de cada peatón al pasar de un frame a otro, calculando su distancia como la variación entre sus coordenadas x e y.
    2.3 Conversión de coordenadas a píxeles: La función mts_pixel permite transformar las coordenadas en metros a píxeles, lo que puede ser útil para representar los datos de manera gráfica o para realizar análisis adicionales basados en píxeles.
 
 4. Cargar:
@@ -63,11 +64,13 @@ Después de seguir el procedimiento explicado anteriormente, utilizando la bibli
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
 </div>
 
-Posteriormente se realizó el calculo
+Se procedió con el cálculo de las velocidades de los peatones, seguido de la representación gráfica de sus promedios. Esta visualización reveló una distribución normal en las velocidades promedio, con un ligero sesgo positivo.
 
 <div align="center">
 <img src="images/Histograma_Lab3.png" alt="Histograma" width="492" height="292">
 </div>
+
+En la etapa final del análisis, se determinaron la media y la desviación estándar de las velocidades promedio de los peatones, arrojando valores aproximados de 1.4657 y 0.2128, respectivamente. Estos resultados permiten la realización de análisis posteriores. Por ejemplo, mediante simulaciones, es posible generar variables aleatorias para modelar el comportamiento y evaluar posibles cambios. Estos análisis se desarrollarían tomando en cuenta las condiciones iniciales previamente expuestas, como el tamaño de la puerta de entrada y salida.
 
 <div align="center">
 <img src="images/Metricas_Lab3.png" alt="Métricas de rendimiento" width="493" height="158">
