@@ -57,50 +57,10 @@ Con esta combinación de funciones, es posible realizar un análisis completo de
 
 
 ## 4. Resultados obtenidos
-Después de seguir el procedimiento explicado anteriormente, se llevó a cabo un análisis para identificar las coordenadas "X" e "Y" que se repitieron con mayor frecuencia, así como las intersecciones más frecuentes entre estas coordenadas. El objetivo principal fue visualizar las áreas por donde se desplazaban los peatones en el túnel.
-
-<div align="center">
-<img src="images/Metros.png" alt="Metros" width="700" height="300">
-</div>
-
-Este análisis se realizó utilizando tanto los datos en metros como en píxeles. Es importante tener en cuenta que, al convertir los datos a píxeles, se realizaron aproximaciones, lo que resultó en un aumento de las frecuencias observadas.
-
-<div align="center">
-<img src="images/Pixeles.png" alt="Pixeles" width="570" height="140">
-</div>
-
-Este enfoque del análisis permitió obtener una representación más clara y visual de los patrones de movimiento de los peatones en el túnel. Las áreas con mayor concentración de peatones y las rutas más transitadas quedaron resaltadas por colores más claros en el mapa de calor, lo que facilita la identificación de tendencias y comportamientos relevantes para el estudio del flujo de personas en el área analizada.
-
-<div align="center">
-<img src="images/Heatmap.png" alt="Mapa" width="519" height="387">
-</div>
-
-Por último, se calcularon las métricas de rendimiento del sistema para ambos códigos, con lo cual se mide el uso de recursos (CPU y Memoria), en primer lugar se midió el código con Numpy utilizando matrices, luego el código con Pandas utilizando data frame. Los resultados indican una notable eficiencia, evidenciando una cuidadosa optimización del código. No obstante, es relevante señalar que al emplear la biblioteca Pandas se logra una mejora temporal de aproximadamente 0.05 segundos, agilizando la ejecución. Además, se destaca la notable concisión del código al emplear la estructura de "Data Frames" en lugar de matrices, lo cual no solo simplifica el código, sino que también incrementa su legibilidad y comprensión.
-
-<div align="center">
-<img src="images/Met1.png" alt="Metricas numpy" width="431" height="99">
-</div>
-
-<div align="center">
-<img src="images/Met2.png" alt="Metricas pandas" width="431" height="99">
-</div>
-
-Empleando la biblioteca Pandas, se procede al análisis de tres escenarios que abordan la movilidad peatonal, para visualizar el comportamiento de los peatones se realizó un Histograma 2D, utilizando 40 y 30 pixeles para los ejes x e y, respectivamente. Estos casos consideran un desplazamiento unidireccional de derecha a izquierda, el primer caso es el mismo presentado anteriormente, con una persona parada en el centro de la puerta de ingreso, la cual tiene un ancho de un metro y una puerta de cinco metros para la salida, provocando así una concentración marcada de flujo a lo largo de las secciones laterales del túnel, mientras que el sector central ostenta un vacío relativo.
+Después de seguir el procedimiento explicado anteriormente, utilizando la biblioteca Pandas se procede a analizar la movilidad peatonal, para visualizar el comportamiento de los peatones se realizó un Histograma 2D, utilizando 40 y 30 pixeles para los ejes x e y, respectivamente. Se considera un desplazamiento unidireccional de derecha a izquierda, es el mismo presentado anteriormente, con una persona parada en el centro de la puerta de ingreso, la cual tiene un ancho de un metro y una puerta de cinco metros para la salida, provocando así una concentración marcada de flujo a lo largo de las secciones laterales del túnel, mientras que el sector central ostenta un vacío relativo.
 
 <div align="center">
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
-</div>
-
-En el segundo caso, relativo a una entrada con una extensión de cuatro metros y una salida de cinco metros, es evidente la utilización integral del túnel por parte de los peatones. No se aprecia una preferencia marcada por un sendero con mayor repetición de tránsito. En su mayoría, los peatones transitan en línea prácticamente recta hasta alcanzar el extremo final. Aquellos se encuentran en los extremos laterales del túnel tienen que ir hacia el centro a medida que se acercan a la salida, esto se puede evidenciar en la franja amarilla superior.
-
-<div align="center">
-<img src="images/Histograma_2.png" alt="Histograma 2" width="541" height="442">
-</div>
-
-Finalmente, se plantea la situación en la cual se accede por una puerta de 5 metros, no obstante, la salida se encuentra limitada a 2 metros. Esta disposición revela una notable congestión en al final del tránsito en el túnel, ya que los peatones, inicialmente dispersos a lo largo del trayecto, se ven obligados a converger hacia el centro del túnel debido a la estrechez de la salida.
-
-<div align="center">
-<img src="images/Histograma_3.png" alt="Histograma 3" width="541" height="442">
 </div>
 
 <div align="center">
