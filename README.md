@@ -63,6 +63,8 @@ Después de seguir el procedimiento explicado anteriormente, utilizando la bibli
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
 </div>
 
+Posteriormente se realizó el calculo
+
 <div align="center">
 <img src="images/Histograma_Lab3.png" alt="Histograma" width="492" height="292">
 </div>
