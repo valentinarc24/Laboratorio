@@ -44,15 +44,13 @@ Se utilizó un archivo de texto que contiene 25536 líneas de datos, los cuales 
 1. Extracción: En primer lugar se lee el archivo del cual se extraen las coordenadas de los peatones, las cuales se entregan en la función main para realizar los distintos analisis requeridos.
 
 2. Transformar:
-   2.1. Se crea el Data frame con los datos del archivo, creado así una tabla donde cada fila representa un peatón en un frame (imagen) especifico.
-   2.2. Se crea
-   2.2. Se calcula la velocidad de cada peatón al pasar de un frame a otro, calculando su distancia como la variación entre sus coordenadas x e y.
-   2.3 Conversión de coordenadas a píxeles: La función mts_pixel permite transformar las coordenadas en metros a píxeles, lo que puede ser útil para representar los datos de manera gráfica o para realizar análisis adicionales basados en píxeles.
+   2.1. Creación del Data Frame: Se inicia el proceso creando un Data Frame que contiene los datos extraídos del archivo fuente. Este Data Frame se configura como una tabla en la que cada fila corresponde a la información de un peatón en un frame (imagen) específico.
+   2.2. Cálculo de Velocidad Individual: Posteriormente, se procede a calcular la velocidad de cada peatón al moverse de un frame al siguiente. Esta velocidad se determina mediante el cálculo de la distancia que el peatón ha recorrido, considerando la variación entre sus coordenadas x e y en estos dos frames consecutivos.
+   2.3. Cálculo de Velocidad Promedio: Una vez obtenidas las velocidades individuales, se procede al cálculo de la velocidad promedio para cada peatón. Esto implica la determinación de la media de las velocidades individuales del peatón a lo largo de su recorrido.
+   2.4. Análisis Estadístico: Para un análisis más profundo, se realiza el cálculo de la media y la desviación estándar de las velocidades promedio de todos los peatones en el conjunto de datos. Estos valores estadísticos proporcionan información importante sobre la distribución y variabilidad de las velocidades entre los diferentes peatones observados.
 
-4. Cargar:
-   3.1. Creación de un mapa de calor: La matriz de calor generada con la función main permite visualizar la distribución espacial de los peatones en el túnel, mostrando las áreas con mayor densidad de paso.
-
-Por otra parte, se realizó la creación del mapa de calor con la biblioteca Pandas, con la cual se hizó una comparación de los recursos del sistema, utilizando la función get_resource_info proporciona información sobre el tiempo de CPU y el uso de memoria durante la ejecución del código, lo que puede ser valioso para evaluar el rendimiento y eficiencia del análisis en función de los recursos utilizados.
+3. Cargar:
+   3.1. Generación de un Mapa de Calor: Empleando las funcionalidades ofrecidas por la biblioteca Pandas, se procede a crear un mapa de calor en forma de histograma 2D. Este mapa de calor proporciona una representación visual que revela las rutas más utilizadas por los peatones al cruzar el túnel. La utilización de esta herramienta permite identificar los puntos preferentes de travesía y brinda una comprensión intuitiva de los patrones de movimiento en el área en cuestión.
 
 Con esta combinación de funciones, es posible realizar un análisis completo del comportamiento de los peatones en el túnel, identificar patrones de movimiento, zonas de congestión y analizar cómo cambian estas tendencias a lo largo del tiempo o en diferentes secciones del túnel. Además, el mapa de calor permitirá una visualización intuitiva de la densidad de peatones en diferentes áreas, lo que podría ayudar en la planificación y toma de decisiones relacionadas con el diseño y manejo del túnel.
 
