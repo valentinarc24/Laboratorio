@@ -42,6 +42,8 @@ def calculo_velocidad(grupo):
 def main():
     archivo_txt = "UNI_CORR_500_01.txt"
     df = pd.read_csv(archivo_txt, delimiter="\t", skiprows=3)
+    plt.hist2d(df["X"],df["Y"], bins=(40,30),cmap=plt.cm.inferno)
+    plt.show()
     
     grupo = df.groupby('# PersID', group_keys=False)
     df_vel = grupo.apply(calculo_velocidad)
