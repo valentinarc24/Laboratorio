@@ -1,26 +1,27 @@
 ![Logo UCN](images/60x60-ucn-negro.png)
-# Laboratorio 02: Visualización de mapas de calor
+# Laboratorio 03: Velocidad de peatones
 
 
 ## 1. Introducción 
 
-En el contexto actual de planificación urbana y seguridad peatonal, comprender los patrones de desplazamiento de peatones es esencial. La problemática a desarrollar en el presente trabajo consiste en calcular una matriz de frecuencia a partir de datos de puntos de peatones en un archivo de texto. El desarrollo de esta matriz mejora la identificación de zonas de riesgo y la toma de decisiones informadas. A través del uso Python como lenguaje de programación, se ofrece una solución para procesar grandes conjuntos de datos y calcular frecuencias, abordando esta problemática de manera eficiente.
+En el contexto actual de planificación urbana y seguridad peatonal, comprender los patrones de desplazamiento de peatones es esencial. La problemática a desarrollar en el presente trabajo consiste en calcular la velocidad de los peatones a partir de los datos entregados en un archivo de texto. Conocer la velocidad de los peatones, permite dimensionar correctamente los espacios y aumentar la seguridad peatonal. A través del uso Python como lenguaje de programación, se ofrece una solución eficiente para procesar grandes conjuntos de datos.
 
 ### 1.1 Justificación
-Este trabajo es fundamental ya que aborda la falta de herramientas automatizadas para analizar patrones de movimiento de peatones. La matriz de frecuencia obtenida a través de programación en Python permitirá una planificación urbana precisa, mejorando la seguridad y eficiencia en áreas de alto tránsito peatonal. Ante el crecimiento urbano, esta automatización se vuelve esencial para diseñar entornos más seguros y adaptados a las necesidades de los peatones. Es importante destacar que el análisis del flujo de peatones tiene aplicaciones potenciales en diversas áreas de investigación.
+Este trabajo es fundamental ya que aborda la falta de herramientas automatizadas para analizar el movimiento de peatones. Conocer las velocidades a las que se desplazan los peatones permite diseñar espacios eficientes y seguros, optimizando la movilidad y minimizando riesgos de accidentes. Calcular y visualizar las velocidades promedio de los peatones, provee a los planificadores y autoridades una base sólida para tomar decisiones informadas en la gestión del tráfico, diseño de infraestructuras y políticas de seguridad vial. Es importante destacar que el análisis del flujo de peatones tiene aplicaciones potenciales en diversas áreas de investigación.
 ### 1.3 Objetivos 
 
 **Objetivo General**
 
-Desarrollar un programa en lenguaje Python que permita visualizar le movimiento de peatones al pasar por un túnel, en base a los datos proporcionados por un archivo de texto.
+Desarrollar un programa en lenguaje Python que permita calcular la velocidad de los peatones a partir de los datos proporcionados en un archivo de texto y visualizar las velocidades promedios de todos los peatones de manera gráfica.
 
 **Objetivos específicos**
 
 1. Leer y cargar los datos referentes a peatones desde el archivo de texto en el programa.
 2. Organizar la información en estructuras de datos adecuadas para su manipulación posterior.
-3. Optimizar y mejorar la eficiencia del programa en términos de uso de memoria y tiempo de ejecución.
-4. Implementar un mecanismo de generación de un mapa de calor utilizando la matriz de frecuencia calculada. 
-5. Elaborar documentación detallada del programa, explicando su funcionamiento y los algoritmos utilizados.
+3. Desarrollar algoritmos para calcular la velocidad de cada peatón, considerando la distancia recorrida y el tiempo transcurrido.
+5. Optimizar y mejorar la eficiencia del programa en términos de uso de memoria y tiempo de ejecución.
+6. Generar un histograma que represente las velocidades promedio de todos los peatones registrados en el archivo de datos. 
+7. Elaborar documentación detallada del programa, explicando su funcionamiento y los algoritmos utilizados.
 
 ## 2. Marco teórico
 Para la realización del experimento se siguieron los pasos generales de la metodología ETL (Extracción, Transformación y Cargar).
@@ -102,16 +103,19 @@ Finalmente, se plantea la situación en la cual se accede por una puerta de 5 me
 <img src="images/Histograma_3.png" alt="Histograma 3" width="541" height="442">
 </div>
 
+<div align="center">
+<img src="images/Histograma_Lab3.png" alt="Histograma" width="492" height="292">
+</div>
+
+<div align="center">
+<img src="images/Metricas_Lab3.png" alt="Métricas de rendimiento" width="493" height="158">
+</div>
+
 ## 5. Conclusiones
 
-Este trabajo demuestra la importancia de utilizar herramientas computacionales como Python, NumPy, Visual Studio Code y la biblioteca Pandas para analizar patrones de movimiento de peatones en un túnel. La identificación de coordenadas repetidas proporciona información clave sobre las zonas de mayor concentración y tráfico peatonal. La creación de mapas de calor resalta visualmente las áreas de mayor afluencia, lo que facilita la comprensión intuitiva de la distribución de peatones en el túnel.
+Este trabajo ha demostrado la importancia de identificar las velocidades a las que se desplazan los peatones en entornos urbanos, especialmente en contextos como túneles. La información obtenida a través de la herramienta desarrollada proporciona una base sólida para abordar eficazmente desafíos relacionados con la planificación urbana y la seguridad peatonal. La identificación de velocidades en un túnel es especialmente relevante, ya que estos espacios suelen presentar desafíos únicos en términos de flujo de tráfico, iluminación y seguridad. Tener datos precisos sobre las velocidades promedio de los peatones en este contexto permite ajustar las condiciones del túnel para garantizar un flujo seguro y eficiente.
 
-La inclusión de la biblioteca Pandas permitió crear histogramas de diferentes archivos de manera más eficiente y con un código más conciso. Reducir la longitud del código y aumentar la eficiencia computacional es beneficioso por varias razones. Un código más eficiente implica un menor consumo de recursos computacionales, como tiempo de procesamiento y memoria. Esto es especialmente importante cuando se manejan conjuntos de datos extensos o cálculos complejos, como en el análisis de patrones de movimiento. Además, generalmente se ejecuta más rápido, lo que es crucial en aplicaciones en tiempo real o cuando se trabaja con grandes volúmenes de datos.
+Además de su aplicación en túneles, un programa que calcule la velocidad de manera similar podría tener múltiples usos en diferentes escenarios. Por ejemplo, en el ámbito de los deportes y el rendimiento físico, podría utilizarse para medir la velocidad de corredores o ciclistas en pistas de entrenamiento. En la industria de la logística y el transporte, podría aplicarse para rastrear la velocidad de vehículos en rutas de entrega. En entornos académicos o de investigación, este tipo de programa podría utilizarse para analizar el movimiento de animales en estudios de ecología.
 
-Este enfoque tiene implicaciones prácticas en la optimización del diseño de túneles y pasillos, permitiendo una planificación urbana más eficiente y segura. Los datos recopilados también pueden influir en la implementación de medidas de seguridad y señalización en áreas de alto tránsito, lo que reduce los riesgos de accidentes y mejora la seguridad peatonal.
-
-La selección entre túneles estrechos o amplios depende de varios factores cruciales. En escenarios donde se requiera un flujo predominantemente unidireccional y la capacidad no sea una prioridad, los túneles estrechos podrían ser adecuados. Por otro lado, en situaciones que involucren flujos diversos y elevados volúmenes de peatones, como en zonas urbanas densamente pobladas o estaciones de transporte, los túneles amplios serían más apropiados para mantener una distribución uniforme, evitar aglomeraciones y garantizar la seguridad.
-
-Además, este experimento ofrece una herramienta versátil para explorar fenómenos en diversas áreas, desde ecología hasta ingeniería. Al aprovechar la información de coordenadas y los mapas de calor, se posibilita un análisis más profundo de procesos naturales y sistemas artificiales, contribuyendo a un mejor conocimiento y uso sostenible del entorno.
-
+La importancia de visualizar gráficamente los datos radica en su capacidad para proporcionar una representación clara y concisa de la distribución de las velocidades. La visualización de estos en un histograma proporciona información valiosa para comprender la variabilidad en las velocidades y tomar decisiones informadas para la planificación y la seguridad. Al entender las velocidades de los peatones y otros elementos móviles, podemos diseñar entornos más seguros, eficientes y adaptados a las necesidades de las personas, promoviendo una mejor calidad de vida y una movilidad más sostenible en nuestras ciudades.
 
