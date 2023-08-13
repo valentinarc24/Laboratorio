@@ -44,9 +44,13 @@ Se utilizó un archivo de texto que contiene 25536 líneas de datos, los cuales 
 1. Extracción: En primer lugar se lee el archivo del cual se extraen las coordenadas de los peatones, las cuales se entregan en la función main para realizar los distintos analisis requeridos.
 
 2. Transformar:
+   
    2.1. Creación del Data Frame: Se inicia el proceso creando un Data Frame que contiene los datos extraídos del archivo fuente. Este Data Frame se configura como una tabla en la que cada fila corresponde a la información de un peatón en un frame (imagen) específico.
+   
    2.2. Cálculo de Velocidad Individual: Posteriormente, se procede a calcular la velocidad de cada peatón al moverse de un frame al siguiente. Esta velocidad se determina mediante el cálculo de la distancia que el peatón ha recorrido, considerando la variación entre sus coordenadas x e y en estos dos frames consecutivos.
+   
    2.3. Cálculo de Velocidad Promedio: Una vez obtenidas las velocidades individuales, se procede al cálculo de la velocidad promedio para cada peatón. Esto implica la determinación de la media de las velocidades individuales del peatón a lo largo de su recorrido.
+   
    2.4. Análisis Estadístico: Para un análisis más profundo, se realiza el cálculo de la media y la desviación estándar de las velocidades promedio de todos los peatones en el conjunto de datos. Estos valores estadísticos proporcionan información importante sobre la distribución y variabilidad de las velocidades entre los diferentes peatones observados.
 
 3. Cargar:
