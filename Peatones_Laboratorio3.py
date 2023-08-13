@@ -46,6 +46,14 @@ def main():
     grupo = df.groupby('# PersID', group_keys=False)
     df_vel = grupo.apply(calculo_velocidad)
     
+    plt.hist2d(df["X"],df["Y"], bins=(40,30),cmap=plt.cm.inferno)
+    barra_color = plt.colorbar()
+    barra_color.set_label('Frecuencia')
+    plt.xlabel('Coordenada X')
+    plt.ylabel('Coordenada Y')
+    plt.title('Frecuencia de peatones (Histograma 2D)')
+    plt.show()
+
     df_vel.to_csv("Data_Frame.txt", sep='\t', index=False)
     
     media=df_vel["promedio_velocidad"].mean()
