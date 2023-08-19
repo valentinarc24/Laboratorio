@@ -1,41 +1,43 @@
 ![Logo UCN](images/60x60-ucn-negro.png)
-# Laboratorio 03: Velocidad de peatones
+# Laboratorio 04: Cálculo de Sk
 
 
 ## 1. Introducción 
 
-En el contexto actual de planificación urbana y seguridad peatonal, comprender los patrones de desplazamiento de peatones es esencial. La problemática a desarrollar en el presente trabajo consiste en calcular la velocidad de los peatones a partir de los datos entregados en un archivo de texto. Conocer la velocidad de los peatones, permite dimensionar correctamente los espacios y aumentar la seguridad peatonal. A través del uso Python como lenguaje de programación, se ofrece una solución eficiente para procesar grandes conjuntos de datos.
+El presente trabajo se centra en determinar el valor del parámetro "sk" en el modelo de Weidmann, aplicado a la movilidad peatonal. Este modelo es fundamental para entender el comportamiento peatonal en entornos urbanos. Se busca evaluar la relación entre "sk" y las velocidades de los peatones, utilizando datos reales y técnicas de programación en Python. Esto proporciona una visión más profunda de la dinámica peatonal, lo que se puede traducir en mejoras en la planificación urbana en términos de seguridad y eficiencia peatonal.
 
 ### 1.1 Justificación
-Este trabajo es fundamental ya que aborda la falta de herramientas automatizadas para analizar el movimiento de peatones. Conocer las velocidades a las que se desplazan los peatones permite diseñar espacios eficientes y seguros, optimizando la movilidad y minimizando riesgos de accidentes. Calcular y visualizar las velocidades promedio de los peatones, provee a los planificadores y autoridades una base sólida para tomar decisiones informadas en la gestión del tráfico, diseño de infraestructuras y políticas de seguridad vial. Es importante destacar que el análisis del flujo de peatones tiene aplicaciones potenciales en diversas áreas de investigación.
+La relevancia de este trabajo radica en su enfoque de entender el comportamiento de peatones en un túnel. La seguridad peatonal en este entorno es de suma importancia debido a las restricciones de espacio y las posibles emergencias. Mediante el modelo de Weidmann y el análisis del parámetro "sk", se pueden diseñar estrategias de evacuación más efectivas y optimizar la infraestructura para promover un flujo seguro de los peatones. Además, esta investigación tiene potenciales aplicaciones en diversas disciplinas.
 ### 1.3 Objetivos 
 
 **Objetivo General**
 
-Desarrollar un programa en lenguaje Python que permita calcular la velocidad de los peatones a partir de los datos proporcionados en un archivo de texto y visualizar las velocidades promedios de todos los peatones de manera gráfica.
+Desarrollar un programa en lenguaje Python que permita calcular el parámetro sk del modelo de Weidmann a partir de los datos proporcionados en un archivo de texto y visualizar la relación entre el sk y la velocidad real de los peatones de manera gráfica.
 
 **Objetivos específicos**
 
 1. Leer y cargar los datos referentes a peatones desde el archivo de texto en el programa.
 2. Organizar la información en estructuras de datos adecuadas para su manipulación posterior.
-3. Desarrollar algoritmos para calcular la velocidad de cada peatón, considerando la distancia recorrida y el tiempo transcurrido.
+3. Desarrollar algoritmos para calcular el parámetro sk, considerando la distancia y cantidad de peatones vecinos.
 5. Optimizar y mejorar la eficiencia del programa en términos de uso de memoria y tiempo de ejecución.
-6. Generar un histograma que represente las velocidades promedio de todos los peatones registrados en el archivo de datos. 
+6. Generar un scatter plot que represente el parámetro sk y las velocidades reales de los peatones registrados en el archivo de texto. 
 7. Elaborar documentación detallada del programa, explicando su funcionamiento y los algoritmos utilizados.
 
 ## 2. Marco teórico
 Para la realización del experimento se siguieron los pasos generales de la metodología ETL (Extracción, Transformación y Cargar).
-El uso de NumPy y el lenguaje Python en Visual Studio permiten la manipulación eficiente de los datos, facilitando los cálculos de frecuencia y análisis posteriores.
+El uso de lenguaje Python en Visual Studio permiten la manipulación eficiente de los datos, facilitando el calculo de sk y análisis posteriores.
 
-**Python**: Es un lenguaje de programación ampliamente utilizado en la ciencia de datos debido a su facilidad de uso y su amplia gama de bibliotecas especializadas. Su sintaxis clara y legible permite desarrollar programas eficientes.
+**Python**: Es un lenguaje de programación ampliamente utilizado debido a su facil uso y amplia gama de bibliotecas. Su sintaxis clara y legible permite desarrollar programas eficientes.
 
-**iPython**: Es un entorno interactivo para la programación en Python, que permite ejecutar y depurar código. Proporciona una interfaz enriquecida para la programación, depuración y visualización de datos, lo que es especialmente útil para la experimentación y análisis iterativo.
+**iPython**: Es un entorno interactivo para la programación en Python. Proporciona una interfaz enriquecida para la programación, depuración y visualización de datos.
 
-**Numpy**: Ofrece estructuras de datos eficientes para trabajar con arreglos multidimensionales y funciones matemáticas de alto rendimiento. Esto es esencial para el análisis de datos masivos.
+**Numpy**: Ofrece estructuras de datos eficientes para trabajar con arreglos multidimensionales y funciones matemáticas de alto rendimiento.
 
-**Visual Studio**: Es un entorno de desarrollo integrado (IDE) muy popular y ampliamente utilizado para programación en diversos lenguajes, incluido Python. Proporciona características avanzadas de edición de código, depuración y control de versiones, lo que facilita el desarrollo y la colaboración en proyectos de programación científica.
+**Visual Studio**: Es un entorno de desarrollo integrado ampliamente utilizado para programación en diversos lenguajes. Proporciona características avanzadas de edición de código, depuración y control de versiones.
 
-**Pandas**: Ofrece estructuras de datos y herramientas para el análisis de datos. Su estructura principal, el DataFrame, se emplea para cargar y organizar los datos de peatones. Esto permite la manipulación y transformación de los datos.
+**Pandas**: Ofrece estructuras de datos y herramientas para el análisis de datos. Su estructura principal, el DataFrame, se emplea para cargar y organizar los datos de peatones.
+
+**Streamlit:**: Es un marco de desarrollo de código abierto que permite crear de manera sencilla aplicaciones web interactivas para la visualización y presentación de datos.
 
 ## 3. Materiales y métodos
 
@@ -72,11 +74,8 @@ Se procedió con el cálculo de las velocidades de los peatones, seguido de la r
 <img src="images/Histograma_Lab3.png" alt="Histograma" width="492" height="292">
 </div>
 
-En la etapa final del análisis, se determinaron la media y la desviación estándar de las velocidades promedio de los peatones, arrojando valores aproximados de 1.4657 y 0.2128, respectivamente. Estos resultados permiten la realización de análisis posteriores. Por ejemplo, mediante simulaciones, es posible generar variables aleatorias para modelar el comportamiento y evaluar posibles cambios. Estos análisis se desarrollarían tomando en cuenta las condiciones iniciales previamente expuestas, como el tamaño de la puerta de entrada y salida.
+A su vez, se determinaron la media y la desviación estándar de las velocidades promedio de los peatones, arrojando valores aproximados de 1.4657 y 0.2128, respectivamente. Estos resultados permiten la realización de análisis posteriores. Por ejemplo, mediante simulaciones, es posible generar variables aleatorias para modelar el comportamiento y evaluar posibles cambios. Estos análisis se desarrollarían tomando en cuenta las condiciones iniciales previamente expuestas, como el tamaño de la puerta de entrada y salida.
 
-<div align="center">
-<img src="images/Metricas_Lab3.png" alt="Métricas de rendimiento" width="493" height="158">
-</div>
 
 ## 5. Conclusiones
 
