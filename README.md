@@ -76,6 +76,9 @@ Se procedió con el cálculo de las velocidades de los peatones, seguido de la r
 
 A su vez, se determinaron la media y la desviación estándar de las velocidades promedio de los peatones, arrojando valores aproximados de 1.4657 y 0.2128, respectivamente. Estos resultados permiten la realización de análisis posteriores. Por ejemplo, mediante simulaciones, es posible generar variables aleatorias para modelar el comportamiento y evaluar posibles cambios. Estos análisis se desarrollarían tomando en cuenta las condiciones iniciales previamente expuestas, como el tamaño de la puerta de entrada y salida.
 
+<div align="center">
+<img src="images/STLAB4.png" alt="Scatter" width="492" height="292">
+</div>
 
 ## 5. Conclusiones
 
