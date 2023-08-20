@@ -51,15 +51,20 @@ Se utilizó un archivo de texto que contiene 25536 líneas de datos, los cuales 
    
    2.2. Cálculo de Velocidad Individual: Posteriormente, se procede a calcular la velocidad de cada peatón al moverse de un frame al siguiente. Esta velocidad se determina mediante el cálculo de la distancia que el peatón ha recorrido, considerando la variación entre sus coordenadas x e y en estos dos frames consecutivos.
    
-   2.3. Cálculo de Velocidad Promedio: Una vez obtenidas las velocidades individuales, se procede al cálculo de la velocidad promedio para cada peatón. Esto implica la determinación de la media de las velocidades individuales del peatón a lo largo de su recorrido.
+   2.3. Cálculo de la distancia del peatón de interés con sus peatones vecinos: Este cálculo se efectúa mediante la función "calcular_distancia", la cual utiliza la fórmula de distancia Euclidiana. En la función "buscar_peatones_cercanos", se construye un árbol de búsqueda (KDTree) basado en las coordenadas de los peatones en un cuadro temporal específico. Para cada peatón en ese cuadro, se localizan los índices de sus vecinos cercanos dentro del radio establecido y se calculan las distancias utilizando "calcular_distancia". Las distancias se suman para medir la distancia total entre el peatón de interés y sus vecinos, finalmente esta información se almacena en el DataFrame.
+
+   2.4. Cálculo del parámetro Sk: Despues de identificar los peatones cercanos, calcular las distancias entre el peatón y sus vecinos y obtener la distancia total. Se procede a calcular el parámetro Sk, dividiendo la distancia total entre el número de vecinos, esto representa la dispersión promedio de las distancias entre el peatón y sus vecinos. Este valor caracteriza cómo están distribuidos los peatones alrededor de un individuo en términos de distancia espacial.
    
-   2.4. Análisis Estadístico: Para un análisis más profundo, se realiza el cálculo de la media y la desviación estándar de las velocidades promedio de todos los peatones en el conjunto de datos. Estos valores estadísticos proporcionan información importante sobre la distribución y variabilidad de las velocidades entre los diferentes peatones observados.
+   2.5. Análisis Estadístico: Para un análisis más profundo, se realiza el cálculo de la media y la desviación estándar del parámetro Sk. Estos valores estadísticos proporcionan información importante sobre la distribución y variabilidad del Sk.
 
 3. Cargar:
    3.1. Generación de un Mapa de Calor: Empleando las funcionalidades ofrecidas por la biblioteca Pandas, se procede a crear un mapa de calor en forma de histograma 2D. Este mapa de calor proporciona una representación visual que revela las rutas más utilizadas por los peatones al cruzar el túnel. La utilización de esta herramienta permite identificar los puntos preferentes de travesía y brinda una comprensión intuitiva de los patrones de movimiento en el área en cuestión.
 
-Con esta combinación de funciones, es posible realizar un análisis completo del comportamiento de los peatones en el túnel, identificar patrones de movimiento, zonas de congestión y analizar cómo cambian estas tendencias a lo largo del tiempo o en diferentes secciones del túnel. Además, el mapa de calor permitirá una visualización intuitiva de la densidad de peatones en diferentes áreas, lo que podría ayudar en la planificación y toma de decisiones relacionadas con el diseño y manejo del túnel.
+   3.2. Generación de un histograma:
 
+   3.3. Generación de un Scatter plot: Utilizando las herramientas disponibles en la librería Matplotlib, se construye un gráfico de dispersión de la interacción entre el parámetro Sk y la velocidad real de los peatones. El scatter plot presenta una visión gráfica de la relación entre estas dos métricas. Mediante la observación de la distribución de puntos en el gráfico, se puede distinguir cómo la dispersión espacial de los peatones influye en sus velocidades de movimiento.
+
+Con esta combinación de funciones, es posible realizar un análisis completo del comportamiento de los peatones en el túnel, identificar patrones de movimiento, zonas de congestión y analizar cómo cambian estas tendencias a lo largo del tiempo o en diferentes secciones del túnel.
 
 ## 4. Resultados obtenidos
 Después de seguir el procedimiento explicado anteriormente, utilizando la biblioteca Pandas se procede a analizar la movilidad peatonal, para visualizar el comportamiento de los peatones se realizó un Histograma 2D, utilizando 40 y 30 pixeles para los ejes x e y, respectivamente. Se considera un desplazamiento unidireccional de derecha a izquierda, es el mismo presentado anteriormente, con una persona parada en el centro de la puerta de ingreso, la cual tiene un ancho de un metro y una puerta de cinco metros para la salida, provocando así una concentración marcada de flujo a lo largo de las secciones laterales del túnel, mientras que el sector central ostenta un vacío relativo.
@@ -68,23 +73,19 @@ Después de seguir el procedimiento explicado anteriormente, utilizando la bibli
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
 </div>
 
-Se procedió con el cálculo de las velocidades de los peatones, seguido de la representación gráfica de sus promedios. Esta visualización reveló una distribución normal en las velocidades promedio, con un ligero sesgo positivo.
-
-<div align="center">
-<img src="images/Histograma_Lab3.png" alt="Histograma" width="492" height="292">
-</div>
-
-A su vez, se determinaron la media y la desviación estándar de las velocidades promedio de los peatones, arrojando valores aproximados de 1.4657 y 0.2128, respectivamente. Estos resultados permiten la realización de análisis posteriores. Por ejemplo, mediante simulaciones, es posible generar variables aleatorias para modelar el comportamiento y evaluar posibles cambios. Estos análisis se desarrollarían tomando en cuenta las condiciones iniciales previamente expuestas, como el tamaño de la puerta de entrada y salida.
-
+Se elaboró un gráfico de dispersión que contrasta al parámetro Sk con la velocidad real de los peatones. Este gráfico ofrece valiosa información para el análisis del comportamiento peatonal. Nos permite entender cómo la dispersión espacial de los peatones se relaciona con sus velocidades, lo cual es fundamental para comprender los patrones de movimiento en una determinada área. Aunque se presentan valores atípicos, aparentemente se forman grupos conglomerados. Estos agrupamientos sugieren que no existe una relación lineal entre las variables. 
 <div align="center">
 <img src="images/STLAB4.png" alt="Scatter" width="492" height="292">
 </div>
 
+
 ## 5. Conclusiones
 
-Este trabajo ha demostrado la importancia de identificar las velocidades a las que se desplazan los peatones en entornos urbanos, especialmente en contextos como túneles. La información obtenida a través de la herramienta desarrollada proporciona una base sólida para abordar eficazmente desafíos relacionados con la planificación urbana y la seguridad peatonal. La identificación de velocidades en un túnel es especialmente relevante, ya que estos espacios suelen presentar desafíos únicos en términos de flujo de tráfico, iluminación y seguridad. Tener datos precisos sobre las velocidades promedio de los peatones en este contexto permite ajustar las condiciones del túnel para garantizar un flujo seguro y eficiente.
+Este trabajo destaca la importancia del análisis del parámetro Sk del modelo de Weidmann en el contexto de la problemática peatonal en túneles. A través de la evaluación de este parámetro y la posterior creación del gráfico Sk vs. velocidad real, se ha logrado una comprensión más profunda de cómo los peatones se comportan en este entorno específico. Los resultados obtenidos no solo son relevantes para la planificación urbana y la seguridad peatonal en túneles, sino que también han demostrado la aplicabilidad de este enfoque en situaciones más amplias.
 
-Además de su aplicación en túneles, un programa que calcule la velocidad de manera similar podría tener múltiples usos en diferentes escenarios. Por ejemplo, en el ámbito de los deportes y el rendimiento físico, podría utilizarse para medir la velocidad de corredores o ciclistas en pistas de entrenamiento. En la industria de la logística y el transporte, podría aplicarse para rastrear la velocidad de vehículos en rutas de entrega. En entornos académicos o de investigación, este tipo de programa podría utilizarse para analizar el movimiento de animales en estudios de ecología.
+La identificación de las velocidades ha proporcionado una valiosa perspectiva sobre cómo se adaptan los peatones a las condiciones particulares de un túnel. Esto tiene implicaciones directas en la mejora de la fluidez y seguridad del flujo peatonal en estos espacios, abordando los retos específicos que los túneles presentan en términos de iluminación, diseño y evacuación.
 
-La importancia de visualizar gráficamente los datos radica en su capacidad para proporcionar una representación clara y concisa de la distribución de las velocidades. La visualización de estos en un histograma proporciona información valiosa para comprender la variabilidad en las velocidades y tomar decisiones informadas para la planificación y la seguridad. Al entender las velocidades de los peatones y otros elementos móviles, podemos diseñar entornos más seguros, eficientes y adaptados a las necesidades de las personas, promoviendo una mejor calidad de vida y una movilidad más sostenible en nuestras ciudades.
+Además de su relevancia en entornos subterráneos, la metodología aplicada en este estudio podría extenderse a otras áreas, como la planificación de eventos masivos, la evaluación de la infraestructura de transporte público y la seguridad en espacios de alta densidad de peatones. La generación de gráficos que relacionan el parámetro Sk con la velocidad real no solo proporciona claridad visual, sino que también permite tomar decisiones informadas y diseñar soluciones efectivas.
+
+
 
