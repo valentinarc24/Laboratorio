@@ -3,6 +3,5 @@ numpy
 matplotlib
 streamlit
 psutil
-math
 scipy
 time
