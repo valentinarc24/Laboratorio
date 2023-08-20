@@ -116,7 +116,7 @@ def main():
     st.title('Análisis de Peatones')
 
     # Leer el archivo de datos original
-    archivo_txt = "/Users/valentina/Downloads/c15/UNI_CORR_500_01.txt"
+    archivo_txt = "UNI_CORR_500_01.txt"
     df = pd.read_csv(archivo_txt, delimiter="\t", skiprows=3)
     with st.sidebar: 
         st.write("Definir tamaño de los ejes del Mapa de Calor")
