@@ -2,7 +2,7 @@ pandas
 numpy
 matplotlib
 streamlit
-time
 psutil
 math
 scipy
+time
