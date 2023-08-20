@@ -73,17 +73,20 @@ Después de seguir el procedimiento explicado anteriormente, utilizando la bibli
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
 </div>
 
-Histogrma de velocidad
+Se generó un histograma que representa la frecuencia de las velocidades de los peatones, esta representación sugiere una aparente  distribución normal. Desarrollar un histograma de las velocidades de los peatones es crucial para comprender su comportamiento en un túnel. Este tipo de análisis proporciona información valiosa sobre cómo los peatones se mueven en un entorno confinado como un túnel, permitiendo identificar patrones de velocidad predominantes, como lo serian en este caso las velocidades que rondan el 1,5.
+
 <div align="center">
 <img src="images/VELLAB4.png" alt="Histograma 1" width="541" height="342">
 </div>
 
-Esatditicos Sk
+Las estadísticas descriptivas del parámetro Sk ofrecen un resumen significativo sobre la relación espacial entre peatones cercanos. El promedio de 1.9078 indica una distancia promedio de alrededor de 1.9 unidades, mientras que el mínimo de 0.4537 y el máximo de 2.9994 revelan la variabilidad en las distancias. La mediana de 1.9324 señala que la mitad de las distancias son menores o iguales a este valor. La desviación estándar de 0.3217 sugiere una dispersión moderada de los datos en relación con la media, y la varianza de 0.1035 complementa esta idea al ofrecer una medida precisa de la variabilidad. En conjunto, estas estadísticas proporcionan información valiosa sobre la distribución y el rango de las distancias entre los peatones vecinos.
+
 <div align="center">
 <img src="images/ESTLAB4.png" alt="Histograma 1" width="467" height="166">
 </div>
 
 Se elaboró un gráfico de dispersión que contrasta al parámetro Sk con la velocidad real de los peatones. Este gráfico ofrece valiosa información para el análisis del comportamiento peatonal. Nos permite entender cómo la dispersión espacial de los peatones se relaciona con sus velocidades, lo cual es fundamental para comprender los patrones de movimiento en una determinada área. Aunque se presentan valores atípicos, aparentemente se forman grupos conglomerados. Estos agrupamientos sugieren que no existe una relación lineal entre las variables. 
+
 <div align="center">
 <img src="images/STLAB4.png" alt="Scatter" width="492" height="292">
 </div>
