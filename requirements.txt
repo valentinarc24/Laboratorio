@@ -4,3 +4,5 @@ matplotlib
 streamlit
 time
 scipy
+psutil
+math
