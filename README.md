@@ -60,8 +60,8 @@ Se utilizó un archivo de texto que contiene 25536 líneas de datos, los cuales 
 3. Cargar:
    3.1. Generación de un Mapa de Calor: Empleando las funcionalidades ofrecidas por la biblioteca Pandas, se procede a crear un mapa de calor en forma de histograma 2D. Este mapa de calor proporciona una representación visual que revela las rutas más utilizadas por los peatones al cruzar el túnel. La utilización de esta herramienta permite identificar los puntos preferentes de travesía y brinda una comprensión intuitiva de los patrones de movimiento en el área en cuestión.
 
-   3.2. Generación de un histograma:
-
+   3.2. Generación de un histograma: La función "hist_velocidad" genera un histograma que muestra cómo se distribuyen las velocidades de los peatones. Utiliza el DataFrame filtrado y el número de intervalos (bins) como argumentos, el número de Bins en el gráfico de velocidad corresponde a 50.
+   
    3.3. Generación de un Scatter plot: Utilizando las herramientas disponibles en la librería Matplotlib, se construye un gráfico de dispersión de la interacción entre el parámetro Sk y la velocidad real de los peatones. El scatter plot presenta una visión gráfica de la relación entre estas dos métricas. Mediante la observación de la distribución de puntos en el gráfico, se puede distinguir cómo la dispersión espacial de los peatones influye en sus velocidades de movimiento.
 
 Con esta combinación de funciones, es posible realizar un análisis completo del comportamiento de los peatones en el túnel, identificar patrones de movimiento, zonas de congestión y analizar cómo cambian estas tendencias a lo largo del tiempo o en diferentes secciones del túnel.
@@ -73,6 +73,16 @@ Después de seguir el procedimiento explicado anteriormente, utilizando la bibli
 <img src="images/Histograma_1.png" alt="Histograma 1" width="541" height="442">
 </div>
 
+Histogrma de velocidad
+<div align="center">
+<img src="images/VELLAB4" alt="Histograma 1" width="541" height="442">
+</div>
+
+Esatditicos Sk
+<div align="center">
+<img src="images/ESTLAB4.png" alt="Histograma 1" width="541" height="442">
+</div>
+
 Se elaboró un gráfico de dispersión que contrasta al parámetro Sk con la velocidad real de los peatones. Este gráfico ofrece valiosa información para el análisis del comportamiento peatonal. Nos permite entender cómo la dispersión espacial de los peatones se relaciona con sus velocidades, lo cual es fundamental para comprender los patrones de movimiento en una determinada área. Aunque se presentan valores atípicos, aparentemente se forman grupos conglomerados. Estos agrupamientos sugieren que no existe una relación lineal entre las variables. 
 <div align="center">
 <img src="images/STLAB4.png" alt="Scatter" width="492" height="292">
@@ -80,7 +90,7 @@ Se elaboró un gráfico de dispersión que contrasta al parámetro Sk con la vel
 
 Finalmente, se ejecutó el código que permite obtener las métricas de funcionamiento del código, proporcionándo valiosas métricas de rendimiento. Estos resultados revelan que el programa tuvo un tiempo de CPU total de 18 segundos, mientras que su requerimiento de memoria virtual alcanzó los 399936.9218 MB. En términos de memoria residente, el programa utilizó 134.09375 MB. Además, el porcentaje de uso de la CPU se mantuvo en un bajo 0.3%, lo que sugiere que el programa operó con una carga mínima en la capacidad de procesamiento de la CPU en ese momento. Estos datos permiten una evaluación más profunda del comportamiento y la eficiencia del código en función de su impacto en los recursos del sistema.
 <div align="center">
-<img src="images/MLAB4.png" alt="Scatter" width="492" height="292">
+<img src="images/MLAB4.png" alt="Scatter" width="670" height="110">
 </div>
 
 ## 5. Conclusiones
