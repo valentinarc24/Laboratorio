@@ -75,12 +75,12 @@ Después de seguir el procedimiento explicado anteriormente, utilizando la bibli
 
 Histogrma de velocidad
 <div align="center">
-<img src="images/VELLAB4" alt="Histograma 1" width="541" height="442">
+<img src="images/VELLAB4.png" alt="Histograma 1" width="541" height="342">
 </div>
 
 Esatditicos Sk
 <div align="center">
-<img src="images/ESTLAB4.png" alt="Histograma 1" width="541" height="442">
+<img src="images/ESTLAB4.png" alt="Histograma 1" width="467" height="166">
 </div>
 
 Se elaboró un gráfico de dispersión que contrasta al parámetro Sk con la velocidad real de los peatones. Este gráfico ofrece valiosa información para el análisis del comportamiento peatonal. Nos permite entender cómo la dispersión espacial de los peatones se relaciona con sus velocidades, lo cual es fundamental para comprender los patrones de movimiento en una determinada área. Aunque se presentan valores atípicos, aparentemente se forman grupos conglomerados. Estos agrupamientos sugieren que no existe una relación lineal entre las variables. 
@@ -90,7 +90,7 @@ Se elaboró un gráfico de dispersión que contrasta al parámetro Sk con la vel
 
 Finalmente, se ejecutó el código que permite obtener las métricas de funcionamiento del código, proporcionándo valiosas métricas de rendimiento. Estos resultados revelan que el programa tuvo un tiempo de CPU total de 18 segundos, mientras que su requerimiento de memoria virtual alcanzó los 399936.9218 MB. En términos de memoria residente, el programa utilizó 134.09375 MB. Además, el porcentaje de uso de la CPU se mantuvo en un bajo 0.3%, lo que sugiere que el programa operó con una carga mínima en la capacidad de procesamiento de la CPU en ese momento. Estos datos permiten una evaluación más profunda del comportamiento y la eficiencia del código en función de su impacto en los recursos del sistema.
 <div align="center">
-<img src="images/MLAB4.png" alt="Scatter" width="670" height="110">
+<img src="images/MLAB4.png" alt="Scatter" width="536" height="88">
 </div>
 
 ## 5. Conclusiones
