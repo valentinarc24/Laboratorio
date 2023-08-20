@@ -78,6 +78,10 @@ Se elaboró un gráfico de dispersión que contrasta al parámetro Sk con la vel
 <img src="images/STLAB4.png" alt="Scatter" width="492" height="292">
 </div>
 
+Finalmente, se ejecutó el código que permite obtener las métricas de funcionamiento del código, proporcionándo valiosas métricas de rendimiento. Estos resultados revelan que el programa tuvo un tiempo de CPU total de 18 segundos, mientras que su requerimiento de memoria virtual alcanzó los 399936.9218 MB. En términos de memoria residente, el programa utilizó 134.09375 MB. Además, el porcentaje de uso de la CPU se mantuvo en un bajo 0.3%, lo que sugiere que el programa operó con una carga mínima en la capacidad de procesamiento de la CPU en ese momento. Estos datos permiten una evaluación más profunda del comportamiento y la eficiencia del código en función de su impacto en los recursos del sistema.
+<div align="center">
+<img src="images/MLAB4.png" alt="Scatter" width="492" height="292">
+</div>
 
 ## 5. Conclusiones
 
